@@ -12,4 +12,6 @@ Here are some of the Python projects currently under development:
 1. Task Manager App
 2. PDF Generator
 
-> ✅ Most projects are under active development. Each folder is a standalone project with its own code and notes.
+> More projects will be added as development progresses.
+
+> Most projects are under active development. Each folder is a standalone project with its own code and notes.
