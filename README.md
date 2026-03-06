@@ -3,11 +3,12 @@
 A collection of **20+ Python projects** I’m building to sharpen my skills in:
 - Python fundamentals & OOP
 - File handling, PDFs, and productivity tools
+- 
 - (Soon) AI + Agents projects
 
 Here are some of the Python projects currently under development:
 
-1. **Task Manager App**
+1. **Build a Task Manager App** : To run the web app go to dictory task-management and open terminal: _streamlit run web.py_
 2. **PDF Generator** : 
 3. **Build an Email News App** : _this app access news about a particular topic and sends them by email_.
 4. 
