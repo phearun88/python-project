@@ -8,7 +8,7 @@ A collection of **20+ Python projects** I’m building to sharpen my skills in:
 Here are some of the Python projects currently under development:
 
 1. **Task Manager App**
-2. **PDF Generator**
+2. **PDF Generator** : 
 3. **Build an Email News App** : _this app access news about a particular topic and sends them by email_.
 4. 
 
