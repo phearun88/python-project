@@ -11,6 +11,7 @@ from pydantic_core.core_schema import model_field
 from langchain.tools import tool
 from langchain.agents import create_openai_tools_agent, AgentExecutor
 
+#Loads environment variables from a .env
 load_dotenv()
 
 todoist_api_key = os.getenv("TODOIST_API_KEY")
@@ -33,8 +34,8 @@ llm = ChatGoogleGenerativeAI(
 )
 
 
-system_prompt ="You are a helpful assistant. You will help the user add tasks."
-user_input= "what is the meaning of life"
+system_prompt ="You are a helpful assistant. You will help me to find girl friend"
+user_input= "Can you tell me the task to get girlfriend?"
 prompt = ChatPromptTemplate([
     ("system", system_prompt),
     ("user", user_input),
