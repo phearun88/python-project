@@ -30,7 +30,20 @@ def add_task(task, desc= None):
     print(task)
     print("Task added")
 
-tools = [add_task ]
+
+@tool
+def show_tasks():
+    """Show tasks list form Todoist API. user this when the user wants to show tasks. """
+    results_paginator  = todoist.get_tasks()
+    tasks = []
+    for task_list in results_paginator:
+        for task in task_list:
+            tasks.append(task.content)
+        return tasks
+
+
+
+tools = [add_task,show_tasks ]
 
 llm = ChatGoogleGenerativeAI(
     model = 'gemini-2.5-flash',
@@ -40,7 +53,11 @@ llm = ChatGoogleGenerativeAI(
 )
 
 
-system_prompt ="You are a helpful assistant. You will help the user add tasks"
+system_prompt ="""
+You are a helpful assistant. You will help the user add tasks.
+you will help the user show existing tasks. if the user asks to show the tasks: for example, "show me the tasks"
+print out the tasks list to user. print them in a bullet list format.
+"""
 
 
 prompt = ChatPromptTemplate([
