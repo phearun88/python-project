@@ -8,13 +8,9 @@ while True:
     if user_action.startswith('add'):
         print(user_action)
         todo = user_action[4:]
-
         todos = get_todos()
-
         todos.append(todo + '\n')
-
         write_todos( todos)
-
     elif user_action.startswith('show'):
 
         todos = get_todos()
@@ -28,11 +24,8 @@ while True:
             number = int(user_action[5:])
 
             print(number)
-
             number = number - 1
-
             todos = get_todos()
-
             new_todo = input("Enter new todo: ")
             todos[number] = new_todo + '\n'
 

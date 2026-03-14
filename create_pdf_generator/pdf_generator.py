@@ -1,7 +1,6 @@
 from fpdf import FPDF
 import pandas as pd
 
-
 pdf = FPDF(orientation="P", unit="mm", format="A4")
 pdf.set_auto_page_break(auto=False, margin=0)
 
@@ -19,8 +18,6 @@ for index, row in df.iterrows():
 
     for y in range(20,298,10):
         pdf.line(10, y, 200, y)
-
-
 
     #Set the footer
     pdf.ln(260)

@@ -13,7 +13,6 @@ url = "https://newsapi.org/v2/everything?"\
        "apiKey=xxxxxxx&"\
         "language=en"
 
-
 #make request
 request = requests.get(url)
 

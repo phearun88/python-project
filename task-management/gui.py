@@ -1,7 +1,5 @@
 from unittest import case
-
 import function
-
 import FreeSimpleGUI as sg
 import time
 

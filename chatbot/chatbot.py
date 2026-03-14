@@ -26,11 +26,6 @@ llm = ChatGoogleGenerativeAI(
 )
 
 
-
-
-
-
-
 # with open('file.txt') as file:
 #     content = file.read()
 
