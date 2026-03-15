@@ -11,7 +11,7 @@ url = "https://newsapi.org/v2/everything?"\
        f"q={topic}&"\
        "sortBy=publishedAt&"\
        "apiKey=xxxxxxx&"\
-        "language=en"
+       "language=en"
 
 #make request
 request = requests.get(url)
