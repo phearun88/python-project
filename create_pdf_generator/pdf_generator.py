@@ -29,13 +29,11 @@ for index, row in df.iterrows():
         pdf.add_page()
         # Set the footer
         pdf.ln(265)
-
         for y in range(20, 298, 10):
             pdf.line(10, y, 200, y)
 
         pdf.set_font(family="Times", style="I", size=8)
         pdf.set_text_color(180, 180, 180)
         pdf.cell(w=0, h=12, txt=row["Topic"], align="R")
-
 
 pdf.output("output.pdf")
