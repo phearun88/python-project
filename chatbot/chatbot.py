@@ -6,7 +6,7 @@ from task_manager_ai_agent.ai_agent import system_prompt
 
 load_dotenv()
 
-gemini_key = os.getenv("GEMINI_API_KEY01")
+gemini_key = os.getenv("GOOGLE_API_KEY")
 
 system_prompt = """
     You are Einstein.
