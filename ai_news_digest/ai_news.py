@@ -15,5 +15,4 @@ model = init_chat_model(
 response = model.invoke("Is a pen better than pencil?")
 response_str = response.content[0]['text']
 
-
 print(response_str)
