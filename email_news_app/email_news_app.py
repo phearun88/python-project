@@ -4,13 +4,13 @@ from send_email import send_email
 topic = "tesla"
 
 #To get the API Key from this website:  https://newsapi.org/
-api_key = "xxxxxx"
+api_key = "xxxx"
 
 #copy URL value from the Get:
 url = "https://newsapi.org/v2/everything?"\
        f"q={topic}&"\
        "sortBy=publishedAt&"\
-       "apiKey=xxxxxxx&"\
+       "apiKey=xxxxxx&"\
        "language=en"
 
 #make request
