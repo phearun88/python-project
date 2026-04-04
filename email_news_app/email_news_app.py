@@ -12,7 +12,6 @@ url = "https://newsapi.org/v2/everything?"\
        "sortBy=publishedAt&"\
        "apiKey=xxxxxx&"\
        "language=en"
-
 #make request
 request = requests.get(url)
 
