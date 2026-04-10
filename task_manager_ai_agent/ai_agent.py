@@ -12,6 +12,9 @@ from langchain.tools import tool
 from langchain.agents import create_openai_tools_agent, AgentExecutor
 from todoist_api_python.api import TodoistAPI
 
+
+
+
 #Loads environment variables from a .env
 load_dotenv()
 
@@ -45,7 +48,6 @@ llm = ChatGoogleGenerativeAI(
     model = 'gemini-2.5-flash',
     google_api_key = gemini_api_key,
     temperature = 0.3
-
 )
 
 system_prompt ="""
@@ -67,8 +69,6 @@ prompt = ChatPromptTemplate([
 agent = create_openai_tools_agent(llm, tools, prompt)
 
 agent_executor = AgentExecutor(agent = agent, tools = tools, verbose=True)
-
-
 
 #response = chain.invoke({"input": user_input})
 
