@@ -19,7 +19,7 @@ from todoist_api_python.api import TodoistAPI
 load_dotenv()
 
 todoist_api_key = os.getenv("TODOIST_API_KEY")
-gemini_api_key = os.getenv("GEMINI_API_KEY")
+gemini_api_key = os.getenv("GOOGLE_API_KEY")
 
 todoist = TodoistAPI(todoist_api_key)
 
