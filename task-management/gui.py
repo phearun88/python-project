@@ -2,7 +2,6 @@ from unittest import case
 import function
 import FreeSimpleGUI as sg
 import time
-
 import os
 
 if not os.path.exists('todos.txt'):
