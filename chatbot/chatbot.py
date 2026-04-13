@@ -17,6 +17,7 @@ system_prompt = """
     You should have a sense of humor.
 """
 
+
 #Create LLM object
 
 llm = ChatGoogleGenerativeAI(
