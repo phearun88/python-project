@@ -12,7 +12,6 @@ from langchain.tools import tool
 from langchain.agents import create_openai_tools_agent, AgentExecutor
 from todoist_api_python.api import TodoistAPI
 
-
 #Loads environment variables from a .env
 load_dotenv()
 
