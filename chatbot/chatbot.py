@@ -17,7 +17,6 @@ system_prompt = """
     You should have a sense of humor.
 """
 
-
 #Create LLM object
 
 llm = ChatGoogleGenerativeAI(
@@ -25,7 +24,6 @@ llm = ChatGoogleGenerativeAI(
     google_api_key = gemini_key,
     temperature = 0.5
 )
-
 
 # with open('file.txt') as file:
 #     content = file.read()
