@@ -16,7 +16,6 @@ system_prompt = """
     Answer in 2-6 sentences. 
     You should have a sense of humor.
 """
-
 #Create LLM object
 
 llm = ChatGoogleGenerativeAI(
