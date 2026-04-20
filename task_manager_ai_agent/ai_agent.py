@@ -69,7 +69,6 @@ agent_executor = AgentExecutor(agent = agent, tools = tools, verbose=True)
 
 #response = chain.invoke({"input": user_input})
 
-
 history = []
 while True:
     user_input = input("You: ")
